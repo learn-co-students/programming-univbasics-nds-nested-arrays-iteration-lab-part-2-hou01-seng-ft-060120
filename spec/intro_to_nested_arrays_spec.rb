@@ -13,14 +13,12 @@ array_1 = [
 array_2 = [
   [1,2,3],
   [5,1,3],
-  [4,3,0] 
+  [4,3,0]
 ]
 
 describe "Write a method called \"find_min_in_nested_arrays\"" do
-  describe "that takes in argument of an Array of Arrays containing sets of numbers" do
     it "returns the smallest numbers from each set in a new Array" do
       expect(find_min_in_nested_arrays(array_1)).to eq([18, 17, 13, 19, 20, 24, 22])
       expect(find_min_in_nested_arrays(array_2)).to eq([1, 1, 0])
     end
   end
-end
